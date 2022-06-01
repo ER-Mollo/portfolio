@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*index page*/
+
+/*header*/
+#header{
+    position: relative;
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #ffe8e3;
+    z-index: 2;
+}
+#header header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 10px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nav{
+    padding: 5px 10px;
+}
+.nav a{
+    letter-spacing: .7px;
+    color: #ffe8e3;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.nav a:hover{
+    background-color: #e8826c;
+    color: #ffe8e3;
+    letter-spacing: 2px;
+}
+
+#header video{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+.text{
+    position: relative;
+    z-index: 10;
+}
+.text h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+}
+.text h2 nav{
+    color: #e8826c;
+}
+.text a{
+    display: inline;
+    font-size: .8rem;
+    background: #ffe8e3;
+    padding: 5px 55px;
+    color: #111;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+}
+.text a:hover {
+    background-color: #e8826c;
+    letter-spacing: 3px;
+}
+.active{
+    background-color: #e8826c;
+    letter-spacing: 3px;
+}
+/* end of header */
+
+/* Bio */
+#bio{
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bio{
+    margin-left: 100px;
+    padding: 100px;
+    align-items: center;
+    
+}
+.bio h1{
+    display: flex;
+    font-size: 3rem;
+    font-weight: 200;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.bio h1 nav{
+    color: #e8826c;
+}
+.bio p{
+    font-size: .9rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 50;
+}
+.image img{
+    width: 400px;
+    height: 400px;
+    box-shadow: 10px 10px 15px grey;
+    border: 3px solid #e8826c ;
+}
+
+/* End of Bio */
+
+/*contact*/
+
+#contact{
+    padding: 20px;
+}
+
+top{
+    padding: 100px;;
+}
+.top h3{
+    text-align: center;
+    font-size: 2rem;
+}
+.top p{
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 60;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+.info{
+    display:flex;
+    padding: 30px;
+}
+.contact{
+    padding:30px;
+}
+
+.message{
+    padding: 0 150px;
+}
+.text img{
+    margin:500px;
+}
+
+.form{
+    display: grid;
+    padding: 40px 40px;
+    padding-left: 50px;
+    box-shadow: grey 10px 10px 10px 10px;
+    margin-left: 50px;
+}
+.form input{
+    width: 500px;
+    padding: 10px;
+    border: 2px solid rgb(147, 150, 147);
+    border-radius: 25px;
+}
+.form input:hover{
+    border:2px solid #e8826c;
+}
+.form textarea{
+    border:2px solid rgb(147, 150, 147);
+    border-radius: 25px;
+    padding: 20px;
+}
+.form textarea:hover{
+    border:2px solid rgb(37, 36, 36);
+}
+.form button{
+    text-decoration: none;
+    display: block;
+    background-color: #e8826c;
+    color: #111;
+    text-align: center;
+     border: 2px solid rgb(3, 66, 3) ;
+     border-radius: 25px;
+     font-size: .9rem;
+}
+.form button:hover{
+    background-color: rgb(59, 58, 58);
+    color:white;
+}
+.form .con small{
+    visibility: hidden; 
+}
+.form .con.success input{
+    border-color: green;
+}
+.form .con.success textarea{
+    border-color: green;
+}
+.form .con.error textarea{
+    border-color: red;
+}
+.form .con.error input{
+    border-color: red;
+}
+.form .con.error small{
+    visibility: visible;
+    color: red
+}
+.contact img{
+    width : 50px;
+    height : 50px;
+}
+.contact p{
+    font-size: .9rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+/*about*/
+#about{
+    padding:0;
+    background-color: rgb(71, 69, 69);
+}
+#about h3{
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    padding:0;
+    text-transform:uppercase ;
+    padding-bottom: 0;
+}
+#about h3 nav{
+    color:#e8826c
+}
+#about p{
+    font-size: .9rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding:20px;
+    color:whitesmoke;
+}
+#about .me{
+    padding: 40px 50px;
+}
+#about .me .words{
+    display: flex;
+}
+#about .me img{
+    width: 250px;
+    height: 250px;
+    border: 2p #111 solid;
+    border-radius: 50px;
+}
+#about .skills{
+    display: flex;
+    padding: 20px 150px;
+    background-color: rgb(247, 166, 119) ;
+    justify-content: space-between;
+}
+#about .skills h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+
+}
+#about .edu{
+    padding: 10px;
+}
+.edu h4{
+    text-align: center;
+    font-size: 2rem;
+    color: #e8826c;
+}
+#about .edu ul{
+    display: flex;
+    margin-left: 500px;
+    padding: 20px;
+    align-items: center;
+    list-style: none;
+}
+.edu li{
+    padding: 20px;
+}
+.edu li h4{
+    color: #ffe8e3;
+    font-size: 1.3rem;
+}
+.edu li nav{
+    color: #fff;
+    font-size: 0.7rem;
+}
+.edu li h6{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
+
+/*footer*/
+#footer{
+    position: absolute;
+    right: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 1vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    z-index: 2;
+}
+#footer footer{
+    bottom: 0;
+    left: 0;
+    width:100%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.con p{
+    padding:5px;
+    font-weight: 100;
+}
+.icon{
+    align-items: center;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+}
+/*end of footer*/

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!--header-->
+        <section id="header">
+            <header>
+                <div></div>
+                <div class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a class="active" href="contact.html">Contact</a>
+                </div>
+            </header>
+            <div class="overlay"></div>
+            <div class="text">
+                <img src="./media/logo.png" alt="logo">
+            </div>
+        </section>
+        <!--Contact-->
+        <section id="contact">
+            <div class="top">
+                <h3>Get In Touch</h3>
+                <p>If you have any message, queries or you'd just <br>like to connect with us please send us your message and we will contact you as soon as we can</p>
+            </div>
+            <div class="info">
+                <div class="contact">
+                    <table>
+                        <tr>
+                            <td><img src="media/location.png"/></td>
+                            <td><p>Rabie Ridge ext 5, Midrand</p></td>
+                        </tr>
+                        <tr>
+                            <td><img src="media/email.png"></td>
+                            <td><p>mollorefilwe68@gmail.com</p></td>
+                        </tr>
+                        <tr>
+                            <td><img src="media/phone.png"></td>
+                            <td><p>+27 74 456 7790</p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="message">
+                    <form name = "myform" class="form" id="form" action="https://formspree.io/f/mlezbvlo" method="POST">
+                        <div class="con">
+                            <input name="name" type="text" placeholder="Full Name" id="fname"><br>
+                            <small>Error</small>
+                        </div>
+                        <div class="con">
+                            <input type="email" name="_replyto" type="text" placeholder="Email Address" id="email"/><br>
+                            <small>Error</small>
+                        </div>
+                        <div class="con">
+                            <input name="contact" type="text" placeholder="Contact Number" id="num" /><br>
+                            <small>Error</small>
+                        </div>
+                        <div class="con">
+                            <textarea name="comment" rows="6" cols="64" name="comment" id="com" >Enter your message here
+                            </textarea><br>
+                            <small>Error</small>
+                        </div>
+                        <button value="send">SUBMIT</button>
+                    
+                    </form>
+                    
+                </div>
+        </section>
+
+        <!--footer-->
+        <section id="footer">
+            <footer>
+                <div><img src="./media/logo.png" width="100px" height="80px"></div>
+                <div class="con">
+                    <p>© Copyright 2022. All right reserved</p>
+                </div>
+            <div class="icon">
+                <a href="#" class="face"><img src="media/insta.png"/></a>
+                <a href="#" class="twit"><img src="media/twitter.png"/></a>
+                <a href="#" class="insta"><img src="media/in.png"/></a>
+                <a href="#" class="whats"><img src="media/whats.png"/></a>
+            </div></footer>
+        </section>
+    </body>
+</html>
